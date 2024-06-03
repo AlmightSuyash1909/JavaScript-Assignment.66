@@ -1,0 +1,156 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+/* Own Styling */
+html{
+    font-size: 16px;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(227, 234, 240);
+}
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 32px;
+    width: 100%;
+}
+.header{
+    padding: 2rem 0;
+    background: linear-gradient(to right , rgb(83, 83, 248),rgb(255, 0, 0));
+    text-align: center;
+}
+h1{
+    font-size: 2.6rem;
+    font-weight: 900;
+    color:white;
+}
+input{
+    margin-top: 2rem;
+    display: inline-block;
+    width:22rem;
+    padding: 0.4rem 1rem;
+    border-radius: 6px;
+    border:0;
+    outline:0;
+}
+.flex{
+    display:flex;
+    align-items: center;
+}
+.wrap{
+    flex-wrap:wrap
+}
+.justify-between{
+    justify-content: space-between;
+}
+.tags{
+    margin: 2rem 0 ;
+    padding: 0 9rem;
+}
+.tags li {
+    background-color: black;
+    padding:0.5rem 1rem ;
+    color:white;
+    border-radius: 6px;
+
+}
+.tags li:hover{
+    background-color: rgba(0, 204, 255, 0.411);
+    color:black;
+}
+h2{
+    font-size:22px;
+    margin-top: 1rem;
+    font-weight: 700;
+}
+p{
+    margin-top: 18px ;
+    text-align: center;
+}
+img{
+    border-radius: 50%;
+    border: 1px solid green;
+}
+.card{
+    padding: 24px;
+    margin: 1%;
+    flex: 0 1 30%;
+    height:auto;
+    background: linear-gradient(to right , rgba(1, 255, 1, 0.514),rgba(0, 0, 255, 0.459));
+    border-radius: 6px;
+    margin-top: 30px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.712);
+    text-align: center;
+}
+.btn{
+    display: inline-block;
+    padding:8px 18px;
+    background-color: rgb(227, 234, 240) ;
+    text-decoration: none;
+    color:rgb(101, 101, 248);
+    width: 100%;
+    text-align: center;
+    border-radius:4px;
+    font-size: 18px;
+    font-family: 700;
+    margin-top:20px;
+} 
+.btn:hover{
+    background-color: rgba(0, 0, 0, 0.452);
+    color:white;
+}
+.active{
+    background-color: white !important;
+    color:black !important;
+}
